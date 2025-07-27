@@ -10,19 +10,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-height: 100vh;
+height: 100vh; 
+
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c8b6ff;
-    height: 70vh;
-    width: 40vw;
+    background-color: #fbffc1;
+   height: auto;
+    width: fit-content;
     max-width: 500px;
+    min-width: 30rem;
     border-radius: 2rem;
- border: 2px solid white;
+ border: 2px solid #ff8b8b;
 }
 .Input{
     display: flex;
@@ -37,11 +39,11 @@ input{
     font-size: 3vh;
     width: 25vw;
     max-width: 300px;
- background:#e7c6ff;
-border: 1px solid white;
+ background:#aeffe4;
+border: 1px solid #ff36bc;
 border-radius: 1rem;
     outline:none;
-    color:white;
+    color:#000000;
 
 }
 .add {
@@ -62,15 +64,12 @@ margin-bottom: 1.5rem;
 .add:hover {
   background-color: #c6a1e1;
 }
-hr{
-    background-color: white;
-    color: white;
-}
+
 .body{
-    background-color: #e7c6ff;
+    background-color: #ffffff;
    width: 100%;
-   height: 100%;
-    margin:2vh 2rem 4vh 2rem;
+   height: fit-content;
+    margin:2vh 2rem 2vh 2rem;
     display: flex;
 }
 .tasks{
@@ -79,16 +78,24 @@ hr{
     justify-content: center;
     align-items: center;
     width: 100%;
-    row-gap: 1vh;
+    row-gap: 0.25vh;
+height: fit-content;
 
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.25vh;
+    padding-bottom: 0.25vh;
 }
 .task{
-    background-color: #c6a1e1;
-    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    width: 85%;
     height: 90%;
-
-    padding: 1rem;
+    padding: 0.5rem;
+    color: #9500ff;
+    border: 2px solid #9500ff;
+    border-radius: 0.5rem;
+    font-size: 4vh;
+}
+.hide{
+    display: none;
 }
